@@ -4,14 +4,20 @@ Choose this route for search by meaning and keywords when the relevant corpus is
 
 ## Restore Acts locally
 
-From the repository root, use Docker, curl, and jq in a macOS or Linux shell. The commands start a dedicated loopback container named `legal-ai-qdrant` on port 6337 and store its data in `research/qdrant`. If that name or port is taken, choose an unused name and port. Use the selected port in the Docker mapping, readiness URL, restore block, verification command, and query helper. The restore refuses to proceed if `acts_india` already exists. To reuse an existing collection, see [Verify an existing restore](#verify-an-existing-restore).
+From the repository root, use Docker, curl, and jq in a macOS or Linux shell. The commands start a dedicated loopback container named `legal-ai-qdrant` on port 6337 with its own data directory. Choose an unused name, port, and storage directory for each new instance. If you change the port, use it in the restore block, verification command, and query helper. The restore refuses to proceed if `acts_india` already exists. Keep the current container and storage if you want to [reuse an existing restore](#verify-an-existing-restore).
 
 ```sh
-mkdir -p research/qdrant
-docker run -d --name legal-ai-qdrant \
-  -p 127.0.0.1:6337:6333 \
-  -v "$PWD/research/qdrant:/qdrant/storage" qdrant/qdrant:v1.16.3
-curl --fail --retry 10 --retry-all-errors --retry-delay 1 http://127.0.0.1:6337/readyz
+(
+  set -eu
+  name=legal-ai-qdrant
+  port=6337
+  storage="$PWD/research/qdrant"
+  mkdir -p research
+  mkdir "$storage"
+  docker run -d --name "$name" -p "127.0.0.1:$port:6333" \
+    -v "$storage:/qdrant/storage" qdrant/qdrant:v1.16.3
+  curl --fail --retry 10 --retry-all-errors --retry-delay 1 "http://127.0.0.1:$port/readyz"
+)
 ```
 
 The collection must match the source's two-shard layout and vector settings. Run the following block in one shell. It reads the snapshot names and checksums from the publisher and has Qdrant pull the files directly.
@@ -54,7 +60,7 @@ The expected count is for the published Acts snapshot checked for this guide. If
 
 ## Verify an existing restore
 
-Set the port to that of your existing Qdrant instance. This command reads the collection's exact count.
+Use the port of your existing Qdrant instance. If its Docker container is stopped, restart that container before running the command. This reads the collection's exact count.
 
 ```sh
 port=6337
