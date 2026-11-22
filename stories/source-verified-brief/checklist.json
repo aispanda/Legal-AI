@@ -1,0 +1,87 @@
+[
+  {
+    "stepId": "LA-01.1",
+    "task": "Confirm the research brief and assign roles.",
+    "status": "Open",
+    "ownerType": "Human",
+    "outputs": "Agreed question, jurisdiction, cutoff date, audience, source scope, and assigned roles.",
+    "completion": "Owner confirms the brief and assigns a researcher and separate reviewer.",
+    "supports": [
+      "LA-AC1",
+      "LA-AC2"
+    ]
+  },
+  {
+    "stepId": "LA-01.2",
+    "task": "Verify access to the selected sources and publication destination.",
+    "status": "Open",
+    "ownerType": "Human",
+    "outputs": "Read-only access observations for the intended accounts.",
+    "completion": "Each required source and destination is readable by its authorized operator. Record unavailable access before dependent work.",
+    "supports": [
+      "LA-AC1",
+      "LA-AC3"
+    ],
+    "requires": [
+      "LA-01.1"
+    ]
+  },
+  {
+    "stepId": "LA-01.3",
+    "task": "Draft the brief and build the evidence record.",
+    "status": "Open",
+    "ownerType": "Human",
+    "outputs": "Brief with citations and pinpoints, plus a list of coverage gaps and uncertain claims.",
+    "completion": "Each material claim has traceable support or a recorded gap and qualification.",
+    "supports": [
+      "LA-AC1",
+      "LA-AC2"
+    ],
+    "requires": [
+      "LA-01.2"
+    ]
+  },
+  {
+    "stepId": "LA-01.4",
+    "task": "Independently verify the draft and exercise the evidence-gap scenario.",
+    "status": "Open",
+    "ownerType": "Human",
+    "outputs": "Scenario results tied to the exact draft revision, with findings.",
+    "completion": "A separate reviewer verifies both scenarios and rechecks any fixes.",
+    "supports": [
+      "LA-AC1",
+      "LA-AC2"
+    ],
+    "requires": [
+      "LA-01.3"
+    ]
+  },
+  {
+    "stepId": "LA-01.5",
+    "task": "Record the decision on the exact revision and release audience.",
+    "status": "Open",
+    "ownerType": "Human",
+    "outputs": "Owner's acceptance and release decisions.",
+    "completion": "Approval, when given, identifies the revision and audience. Release stays pending if approval is missing.",
+    "supports": [
+      "LA-AC4"
+    ],
+    "requires": [
+      "LA-01.4"
+    ]
+  },
+  {
+    "stepId": "LA-01.6",
+    "task": "Publish the approved brief and verify the reader view.",
+    "status": "Open",
+    "ownerType": "Human",
+    "outputs": "Published brief and reader-access verification record.",
+    "completion": "The correct approved version is accessible to the intended audience and the readback matches without private material.",
+    "supports": [
+      "LA-AC3"
+    ],
+    "requires": [
+      "LA-01.5"
+    ]
+  }
+]

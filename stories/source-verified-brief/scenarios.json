@@ -1,0 +1,73 @@
+{
+  "criteria": [
+    {
+      "id": "LA-AC1",
+      "title": "Trace a material claim to its authority",
+      "version": 1,
+      "actor": "independent_reviewer",
+      "startingState": "A draft and evidence record contain a material claim with a source citation and pinpoint.",
+      "actions": [
+        "Open the draft and locate the cited passage in the authority.",
+        "Check that the passage supports the claim and that jurisdiction, date, and relevant later treatment are accounted for."
+      ],
+      "expectedResult": "Every material legal claim in the brief is traceable to a checked authority and pinpoint. The brief states the jurisdiction and cutoff date and distinguishes the authority's text from the researcher's interpretation.",
+      "surfaces": {
+        "desktopUi": true,
+        "mobileUi": false,
+        "backend": false
+      }
+    },
+    {
+      "id": "LA-AC2",
+      "title": "Handle an unresolved authority",
+      "version": 1,
+      "actor": "independent_reviewer",
+      "startingState": "A synthetic draft relies on a citation that cannot be verified or an authority with unresolved later treatment.",
+      "actions": [
+        "Review the claim and its evidence record.",
+        "Check how the draft handles the gap before release."
+      ],
+      "expectedResult": "The draft names the gap and its effect on the conclusion. It omits or qualifies the affected claim and routes any remaining material uncertainty to the owner before release.",
+      "surfaces": {
+        "desktopUi": true,
+        "mobileUi": false,
+        "backend": false
+      }
+    },
+    {
+      "id": "LA-AC3",
+      "title": "Verify the approved publication",
+      "version": 1,
+      "actor": "intended_reader",
+      "startingState": "The owner has approved a specific revision for a named audience, and the approved draft has been published.",
+      "actions": [
+        "Open the saved brief using the intended reader's access.",
+        "Compare its claims and citations with the approved revision.",
+        "Inspect the visible page, linked files, and attachments for restricted material."
+      ],
+      "expectedResult": "The reader can access the approved brief and its shareable references. Claims and citations match the approved revision, and restricted records, credentials, and review evidence are absent.",
+      "surfaces": {
+        "desktopUi": true,
+        "mobileUi": false,
+        "backend": false
+      }
+    },
+    {
+      "id": "LA-AC4",
+      "title": "Hold publication when approval is missing",
+      "version": 1,
+      "actor": "publication_owner",
+      "startingState": "A draft is ready for release but the owner has not approved that revision.",
+      "actions": [
+        "Compare the proposed revision against the owner's release record.",
+        "Check the destination for any release of the unapproved draft."
+      ],
+      "expectedResult": "Release remains pending and the draft stays within the authorized working audience until the owner approves the specific revision.",
+      "surfaces": {
+        "desktopUi": true,
+        "mobileUi": false,
+        "backend": false
+      }
+    }
+  ]
+}
