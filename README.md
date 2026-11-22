@@ -37,10 +37,10 @@ List the shards and their sizes before downloading. Choose the courts, statutes,
 .venv/bin/python download_corpus.py --file in_supreme-court_judgments.parquet
 .venv/bin/python search_index.py build
 .venv/bin/python search_index.py search "procedural fairness" --kind judgment --limit 5
-.venv/bin/python search_index.py search "[verified citation or case number]" --kind judgment --exact --limit 3
+.venv/bin/python search_index.py search "CITATION" --kind judgment --exact --limit 3
 ```
 
-Repeat `--file` in one command to select several shards. The optional `--all` flag downloads about 50 GiB. Allow additional disk space for the local index and build files. The downloader checks publisher SHA-256 values before accepting new downloads. Keep one download or build process active per checkout. Remove an incomplete `.part` file and retry if a transfer has an invalid checksum. If a verified file is suspected to have changed, remove its verification receipt and rerun the downloader to rehash the file.
+Replace `CITATION` with a verified citation or case number. Repeat `--file` in one command to select several shards. The optional `--all` flag downloads about 50 GiB. Allow additional disk space for the local index and build files. The downloader checks publisher SHA-256 values before accepting new downloads. Keep one download or build process active per checkout. For an invalid checksum after an interrupted transfer, delete the affected `corpus/v2026.08.1/<shard>.part` and retry. To rehash an existing downloaded file, remove its `corpus/v2026.08.1/<shard>.verified.json` receipt and rerun the downloader.
 
 The release metadata is pinned to **Open India Law v2026.08.1**. Court and date coverage vary by source. Review coverage and use current official sources for material developments, including amendments and later treatment. Corpus attribution and source options are listed in [Tools and sources](docs/tools-and-sources.md).
 
@@ -54,4 +54,4 @@ Export passages from your source as UTF-8 JSON Lines. Build a separate local ind
 2. Follow the [research and validation checklist](docs/workflow.md). Start with local search and fill specific gaps using the [tools and sources](docs/tools-and-sources.md).
 3. Record findings using the [evidence packet](templates/evidence-packet.md). Give the packet to the drafting model after the independent review and source checks.
 
-The repository contains the search tooling, release metadata, and reusable instructions and templates. Downloaded data, indexes, credentials, and per-matter research belong in the ignored local directories.
+The repository contains the search tooling, release metadata, and reusable instructions and templates. Keep downloaded data in `corpus/`, shard indexes in `tantivy-*/`, and custom indexes and matter files in `research/`. These paths and local `.env*` files are ignored by Git.

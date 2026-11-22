@@ -18,7 +18,7 @@ Map the export to one UTF-8 JSON object per passage. For PDFs, scanned files, or
 | --- | --- |
 | `document_id`, `title`, `text`, `locator` | Required strings. Reuse the same document ID for its passages. Assign different IDs to different versions. A locator can be a page, paragraph, section, or local text anchor. |
 | `source_url`, `source_version`, `chunk_id` | Optional strings for provenance. Use a stable passage ID when one exists. |
-| `kind`, `court`, `region`, `decision_date` | Optional filters and metadata. Kind is `judgment`, `legislation`, `regulation`, `tribunal`, or `document` by default. Use ISO dates for year filtering. |
+| `kind`, `court`, `region`, `decision_date` | Optional filters and metadata. Kind is `judgment`, `legislation`, `regulation`, `tribunal`, or `document`. If omitted, kind is `document`. Use ISO dates for year filtering. |
 | `citation`, `case_number`, `section_number`, `section_title` | Optional legal lookup fields. For an Act section, search exactly for the title followed by `section` and its number. |
 
 After the README's Python setup, this synthetic example exercises the portable path without downloading a corpus.
