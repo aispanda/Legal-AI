@@ -1,15 +1,36 @@
 # Tools and sources
 
-| Tool or source | When to use it | Setup or reference |
-| --- | --- | --- |
-| Tantivy and PyArrow | Search the pinned local corpus by keyword, citation, and filters. | Install the pinned dependencies and run the README quick start. |
-| Vaquill AI Open India Law | Download the public corpus and check its coverage. The bundled release manifest includes publisher URLs, sizes, ETags and SHA-256 values taken from the mirror or dataset metadata. | [Project and licensing](https://github.com/Vaquill-AI/open-india-law), [coverage](https://github.com/Vaquill-AI/open-india-law/blob/main/COVERAGE.md), [dataset](https://huggingface.co/datasets/vaquill/open-india-law), [public mirror](https://oss-data-in.vaquill.ai/index.html) |
-| Vaquill India live API | Check court coverage and run targeted searches to supplement the snapshot. Record the count date, provider coverage, and search date. | Use the India connector or provider account available to you. Check tool descriptions and account limits before sending searches. [Vaquill AI](https://www.vaquill.ai/) |
-| Official courts and India Code | Retrieve authoritative orders and statute text. Verify an applicable legal version or current status directly when available. | [India Code](https://www.indiacode.nic.in/), [Supreme Court judgments](https://www.sci.gov.in/judgements/), [official eCourts Services](https://services.ecourts.gov.in/ecourtindia_v6/) |
-| eCourtsIndia service | Locate a docket, order number, or case history. Confirm consequential results against the official court record. | The public portal, API, and connected tools have their own access paths. [eCourtsIndia](https://ecourtsindia.com/), [API documentation](https://ecourtsindia.com/api/docs) |
-| Indian Kanoon, Prism, and Google | Find citations, later mentions, related cases, and public copies. Prism can suggest leads. Trace material passages to the issuing court or publisher. | [Indian Kanoon](https://indiankanoon.org/), [Indian Kanoon API](https://api.indiankanoon.org/), [Prism access terms](https://indiankanoon.org/members/terms/), [Google Search](https://www.google.com/) |
-| Gemini | Independently search or read source material in a separate session. The original workflow used the Gemini 4 Neon Medium label. Choose an available model and verify that it can access the intended source material. | Start with the independent reviewer prompt. [Gemini](https://gemini.google.com/), [Gemini API documentation](https://ai.google.dev/gemini-api/docs) |
-| TypeSafe Jev | Classify whether a supplied passage supports an exact proposition. Review the output against the passage and retain the evidence. | Use a Jev client with your own account or apply the same rubric manually. [TypeSafe AI](https://typesafe.ai/blog/introducing-system-one-models-and-jev) |
-| Qdrant | Optional semantic discovery when compatible shard embeddings, query embeddings, and source identifiers are available. | Use the publisher’s dataset instructions for available embeddings. The quick start uses Tantivy. [Qdrant documentation](https://qdrant.tech/documentation/) |
+Start with the source closest to the question. Use provider search to find leads and the issuing court, legislature, or regulator to verify them. Record the release, jurisdiction, search date, and gaps.
 
-The pinned corpus is published by Vaquill AI under CC BY 4.0 as described in its dataset and repository. Consult the publisher’s licensing notes before redistributing data. The examples here reference general public legal sources. Keep API credentials in your provider’s secret store or local environment and keep case-specific exports out of Git.
+## India
+
+| Source | Use it for | Public links |
+| --- | --- | --- |
+| Vaquill Open India Law | Bulk corpus, publisher checksums, coverage, and optional Qdrant snapshots. | [GitHub](https://github.com/Vaquill-AI/open-india-law) · [Hugging Face](https://huggingface.co/datasets/vaquill/open-india-law) · [public mirror](https://oss-data-in.vaquill.ai/index.html) · [court coverage](https://github.com/Vaquill-AI/open-india-law/blob/main/COVERAGE.md) · [Qdrant restore](https://github.com/Vaquill-AI/open-india-law/blob/main/data/QDRANT_RESTORE.md) |
+| Vaquill India live API | Targeted legislation and case lookups when an appropriate tool is available. Check the specific corpus and endpoint before searching. | [India API and MCP](https://www.vaquill.ai/in) |
+| Official publishers | Statute text, gazettes, official orders, judgments, and case status. Verify the version applicable to the event. | [India Code](https://www.indiacode.nic.in/) · [eGazette](https://egazette.gov.in/) · [Supreme Court judgments](https://www.sci.gov.in/judgements/) · [official eCourts Services](https://services.ecourts.gov.in/ecourtindia_v6/) |
+| eCourtsIndia | A separate provider for docket, order, and case-history discovery by case number or CNR. | [Search](https://ecourtsindia.com/) · [API documentation](https://ecourtsindia.com/api/docs) |
+| Indian Kanoon and Prism | Find citations, related decisions, later mentions, and public copies. Treat AI results as leads until verified. | [Search](https://indiankanoon.org/) · [API](https://api.indiankanoon.org/) · [Prism access terms](https://indiankanoon.org/members/terms/) |
+
+## United States
+
+| Source | Use it for | Public links |
+| --- | --- | --- |
+| Vaquill Open US Law | Bulk statutes, regulations, and other public-law materials in the publisher's coverage. Convert selected exports to the JSONL schema for local search. | [Dataset and licensing](https://www.vaquill.ai/open-us-law) · [GitHub](https://github.com/Vaquill-AI/open-us-law) · [Hugging Face](https://huggingface.co/datasets/vaquill/open-us-law) · [mirror manifest](https://oss-data-us.vaquill.ai/index.json) |
+| Vaquill US live API | Search and resolve U.S. primary-law citations with the REST API or the U.S. MCP connector. | [API setup](https://www.vaquill.ai/agents) · [U.S. MCP](https://www.vaquill.ai/mcp) |
+| Official federal and state publishers | Verify statutes, legislation, regulations, and decisions in the official edition or docket. For state law use the relevant state publisher. | [U.S. Code](https://uscode.house.gov/) · [GovInfo](https://www.govinfo.gov/) · [eCFR](https://www.ecfr.gov/) · [Federal Register](https://www.federalregister.gov/) · [U.S. Supreme Court opinions](https://www.supremecourt.gov/opinions/opinions.aspx) |
+| CourtListener | Search opinions and citation relationships. Follow consequential results back to the issuing court. | [Search](https://www.courtlistener.com/) · [API](https://www.courtlistener.com/help/api/) |
+
+The pinned India downloader covers the Indian release. U.S. or other exports use the [portable importer](architecture.md#build-from-another-corpus). Check the terms of each release. The Open India Law compilation is CC BY 4.0. Open US Law v2026.09.1 lists CC BY-NC 4.0 terms for its compilation.
+
+## Retrieval and review tools
+
+| Tool | Role | Public links |
+| --- | --- | --- |
+| Tantivy and PyArrow | Local keyword and exact-citation search over selected corpus shards. | [Tantivy](https://github.com/quickwit-oss/tantivy) · [PyArrow](https://arrow.apache.org/docs/python/) |
+| Qdrant, Voyage 4 Nano, FastEmbed, Ollama | Optional local dense and sparse retrieval using compatible snapshots. | [Qdrant](https://qdrant.tech/documentation/) · [Voyage model](https://huggingface.co/MongoDB/voyage-4-nano-GGUF) · [BM25 model](https://huggingface.co/Qdrant/bm25) · [Ollama](https://ollama.com/download) |
+| Google and Gemini | Discover sources and run a fresh independent review. The pilot used Gemini Neon for research review. Record the model and actual access used. | [Google Search](https://www.google.com/) · [Gemini](https://gemini.google.com/) · [Gemini API docs](https://ai.google.dev/gemini-api/docs) |
+| TypeSafe Jev and Claude | Check whether passages support specific claims and review documentation or drafts. Verify material conclusions against primary sources. | [TypeSafe Jev](https://typesafe.ai/blog/introducing-system-one-models-and-jev) · [Claude](https://claude.ai/) |
+| NotebookLM | Optional review of selected source documents. | [NotebookLM](https://notebooklm.google/) |
+
+Use your own account for optional connected tools and keep credentials outside the repo.

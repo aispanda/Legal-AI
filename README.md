@@ -1,8 +1,19 @@
 # Legal-AI
 
-A local-first workflow for Indian legal research. Search a pinned release of Open India Law on your machine, verify the relevant provisions and judgments against primary sources, and give a drafting model a short evidence packet. A second reviewer searches independently and looks for authority that the first pass may have missed.
+Legal-AI helps you build and verify a local legal search index. Use the pinned Open India Law data or bring another corpus as JSONL. The [research checklist](docs/workflow.md) turns search results into an evidence packet with citations and pinpoints.
 
-## Quick start
+## Choose a search route
+
+| Route | Advantages | Tradeoffs |
+| --- | --- | --- |
+| **Tantivy** | Exact citations and keyword search. Runs locally without a model or API account. Start with a 25 MiB download, choose individual shards, or use your own corpus. | Wording matters for keyword queries. The full India download is about 50 GiB and a full index used about 80 GiB in the pilot. |
+| **Qdrant** | Restores Vaquill's prebuilt embeddings for search by meaning plus BM25. Skips local document embedding. | Requires Docker, compatible query models, and more disk. The publisher estimates 11 GB for Acts and 434 GB for all three restored collections. Check court coverage and leave room for restore files. |
+
+**Recommendation:** Start with Tantivy and the smallest relevant corpus. Add the [Qdrant Acts pilot](docs/qdrant.md) if your questions rely on paraphrases or vocabulary differences. Compare both on the same questions before restoring judgment collections. [Vaquill disk requirements](https://github.com/Vaquill-AI/open-india-law/blob/main/data/QDRANT_RESTORE.md#disk-requirements)
+
+For agents, [AGENTS.md](AGENTS.md) gives the setup sequence and checks. The [architecture guide](docs/architecture.md) explains how both routes connect to the research workflow.
+
+## Tantivy quick start
 
 Clone this repository from GitHub or download and unzip it. From its root, use Python 3.14 and curl. The commands below use a macOS or Linux shell. The starter download is about 25 MiB and contains central legislation. The search returns source filenames and row positions alongside the matching text and available source metadata.
 
