@@ -1,0 +1,635 @@
+{
+  "version": "v2026.08.1",
+  "files": [
+    {
+      "file": "in_allahabad_judgments.parquet",
+      "url": "https://oss-data-in.vaquill.ai/v2026.08.1/in_allahabad_judgments.parquet",
+      "bytes": 3022973470,
+      "etag": "d107679cd8f0fc4868470e950d33dad0",
+      "sha256": "8f66319464f8dd51b54541e1a986e212ce9255262db112bf058fa98d09185abb"
+    },
+    {
+      "file": "in_andaman-nicobar_legislation.parquet",
+      "url": "https://oss-data-in.vaquill.ai/v2026.08.1/in_andaman-nicobar_legislation.parquet",
+      "bytes": 1568767,
+      "etag": "39939596b4b0a85360409c867dae31da",
+      "sha256": "c377395649f2897c2f6b3ac5fc076103d6040deb6572040e69c5ed8c5529c865"
+    },
+    {
+      "file": "in_andhra-pradesh_judgments.parquet",
+      "url": "https://oss-data-in.vaquill.ai/v2026.08.1/in_andhra-pradesh_judgments.parquet",
+      "bytes": 1055143916,
+      "etag": "fb2c3c286145d4485adb1d26d4392c23",
+      "sha256": "c89442e8a2054cb8bbbc84971bd99ad3da7db3a630540b3b744259bdd45c2118"
+    },
+    {
+      "file": "in_andhra-pradesh_legislation.parquet",
+      "url": "https://oss-data-in.vaquill.ai/v2026.08.1/in_andhra-pradesh_legislation.parquet",
+      "bytes": 2799381,
+      "etag": "c4d1df7d8dc8351685704ebd6524eddb",
+      "sha256": "e768d15a0ce19181cd4da6b05de2dbe600095af2739b8f13cfd4a21836ad0e6b"
+    },
+    {
+      "file": "in_aptel_tribunal_matters.parquet",
+      "url": "https://oss-data-in.vaquill.ai/v2026.08.1/in_aptel_tribunal_matters.parquet",
+      "bytes": 223762,
+      "etag": "7bc0c5b0b0dd0188e75695689c14c393",
+      "sha256": "25c0314348d533c9cbaed5cc604a12a6c66d642a0e0172b53496c6fb4c5934e2"
+    },
+    {
+      "file": "in_arunachal-pradesh_legislation.parquet",
+      "url": "https://oss-data-in.vaquill.ai/v2026.08.1/in_arunachal-pradesh_legislation.parquet",
+      "bytes": 2207467,
+      "etag": "687bcd839b9b6e84d1e6cafb885a1bff",
+      "sha256": "5d20b2038df1224a9ca527e5ac90811bb65380ea608d30fad06578b76f1c1cf9"
+    },
+    {
+      "file": "in_assam_legislation.parquet",
+      "url": "https://oss-data-in.vaquill.ai/v2026.08.1/in_assam_legislation.parquet",
+      "bytes": 5057591,
+      "etag": "e716c8ea0ae9dee2ef8c1da63eeb62e2",
+      "sha256": "442aeadccd3d51a540aa2a7971ca83cfb04b98a092c2217526a34e53dc0db438"
+    },
+    {
+      "file": "in_atfp_tribunal_matters.parquet",
+      "url": "https://oss-data-in.vaquill.ai/v2026.08.1/in_atfp_tribunal_matters.parquet",
+      "bytes": 273830,
+      "etag": "9ecf53d928344be2830bda6cd3de0ded",
+      "sha256": "6a0ccacc52d9977f80055d244e202dbf5d69bfde3df435fbe8f9f3badaba3937"
+    },
+    {
+      "file": "in_bihar_legislation.parquet",
+      "url": "https://oss-data-in.vaquill.ai/v2026.08.1/in_bihar_legislation.parquet",
+      "bytes": 3873617,
+      "etag": "e7f019552c2b7867de8a0587f43a36ee",
+      "sha256": "81928a97693123ddfe19ebadc117f9fd4a4917b20c6412758d2829c0802d91f9"
+    },
+    {
+      "file": "in_bombay_judgments.parquet",
+      "url": "https://oss-data-in.vaquill.ai/v2026.08.1/in_bombay_judgments.parquet",
+      "bytes": 4341270597,
+      "etag": "7a8fe32640a774402623fdc28aa6f88d",
+      "sha256": "cd0cb397c3d89266d7e2eaaa74ea22d3a7a229a08e6360e730a4727987d66dcb"
+    },
+    {
+      "file": "in_calcutta_judgments.parquet",
+      "url": "https://oss-data-in.vaquill.ai/v2026.08.1/in_calcutta_judgments.parquet",
+      "bytes": 727383949,
+      "etag": "268350c7e84bcdf98acd7a4c7f4c86d8",
+      "sha256": "c91c993d02c9a472a180a234fb5fdea404a9297e63c91f83d743c231ffe95348"
+    },
+    {
+      "file": "in_cat_cis_tribunal_matters.parquet",
+      "url": "https://oss-data-in.vaquill.ai/v2026.08.1/in_cat_cis_tribunal_matters.parquet",
+      "bytes": 17092354,
+      "etag": "041e2a0531d4153c80c38e657bc9d857-3",
+      "sha256": "ad54de7edb581c15108917630dd2836c051b73a5fd5af0c559f716affe6af87a"
+    },
+    {
+      "file": "in_cat_tribunal_matters.parquet",
+      "url": "https://oss-data-in.vaquill.ai/v2026.08.1/in_cat_tribunal_matters.parquet",
+      "bytes": 10134775,
+      "etag": "cfe52c14447a84060efb7cdb269ed805-2",
+      "sha256": "4a917e9603828638ae13c523a0a68559ca21a71a73149dce7b1f55be3572767c"
+    },
+    {
+      "file": "in_cbic_regulations.parquet",
+      "url": "https://oss-data-in.vaquill.ai/v2026.08.1/in_cbic_regulations.parquet",
+      "bytes": 1451162,
+      "etag": "a661b02ae7549bdeb456d8fe36a09324",
+      "sha256": "fd0ed765733278f2c18208666638b0068f87ac05ef8021f5db76d5508c4364d7"
+    },
+    {
+      "file": "in_cci_tribunal_matters.parquet",
+      "url": "https://oss-data-in.vaquill.ai/v2026.08.1/in_cci_tribunal_matters.parquet",
+      "bytes": 152674,
+      "etag": "d4174fe5d9bd8fa30e62ce5f72286bec",
+      "sha256": "99dbb773b9cb4f27f0c126ab0164aa498c01aaaceecfc8a71432e52bdae568ab"
+    },
+    {
+      "file": "in_central_legislation.parquet",
+      "url": "https://oss-data-in.vaquill.ai/v2026.08.1/in_central_legislation.parquet",
+      "bytes": 26515484,
+      "etag": "4f34953d4f25fb00c651609a73b75e00",
+      "sha256": "2a3aab1a2d7a8d3f2e87035870ff6f2f429d34d60b98dd6ab389502df0d4cb73"
+    },
+    {
+      "file": "in_cestat_tribunal_matters.parquet",
+      "url": "https://oss-data-in.vaquill.ai/v2026.08.1/in_cestat_tribunal_matters.parquet",
+      "bytes": 5125695,
+      "etag": "001feab6e914f62cc12cfd64c0129ae4",
+      "sha256": "152aae2dfb5a9e57b2e70ad70de0b25578b157b243851ddebced78d71cd8e484"
+    },
+    {
+      "file": "in_chandigarh_legislation.parquet",
+      "url": "https://oss-data-in.vaquill.ai/v2026.08.1/in_chandigarh_legislation.parquet",
+      "bytes": 7807282,
+      "etag": "562dfc1392923b5a6a40b599d585995c",
+      "sha256": "7a3b5a6a79b07b61093ee6b254f01993fb9efd7459bbd0e29d57afe5b4f3da75"
+    },
+    {
+      "file": "in_chhattisgarh_judgments.parquet",
+      "url": "https://oss-data-in.vaquill.ai/v2026.08.1/in_chhattisgarh_judgments.parquet",
+      "bytes": 2565040777,
+      "etag": "8b4bed3bb65a6e76ca26e90883598a22",
+      "sha256": "fbef7c9fe816a8a1750295d3838a1636fd2c3b1683012dbe724c47927e9ed9fe"
+    },
+    {
+      "file": "in_chhattisgarh_legislation.parquet",
+      "url": "https://oss-data-in.vaquill.ai/v2026.08.1/in_chhattisgarh_legislation.parquet",
+      "bytes": 12452575,
+      "etag": "744866b0f0cb966131977e64ffe6e91d",
+      "sha256": "984fc18ff9d59dffe6de478b48d469968e609d2abab5f7fc32408637c1c6e129"
+    },
+    {
+      "file": "in_cpcb_regulations.parquet",
+      "url": "https://oss-data-in.vaquill.ai/v2026.08.1/in_cpcb_regulations.parquet",
+      "bytes": 4584363,
+      "etag": "012229812bd27f389edbaac2373c72d6",
+      "sha256": "f5328a294130f31d9c1189968635011af17fe25068af3440f183bbae81852cc6"
+    },
+    {
+      "file": "in_dadra-nagar-haveli_legislation.parquet",
+      "url": "https://oss-data-in.vaquill.ai/v2026.08.1/in_dadra-nagar-haveli_legislation.parquet",
+      "bytes": 5082067,
+      "etag": "26ebcf0f6c498756b2fc6ae9ff331a39",
+      "sha256": "370b5d9836c2d3a43df55adee4ef70c7a8f6d46e8286bf0110bc6d24f201aa9e"
+    },
+    {
+      "file": "in_delhi_judgments.parquet",
+      "url": "https://oss-data-in.vaquill.ai/v2026.08.1/in_delhi_judgments.parquet",
+      "bytes": 1988058409,
+      "etag": "76a2040b79c09c82123b076440a42bb4",
+      "sha256": "c52043032af11686a8f5535b00e3cc9bd4a97ffb90489ac84596f7d62136e1e3"
+    },
+    {
+      "file": "in_delhi_legislation.parquet",
+      "url": "https://oss-data-in.vaquill.ai/v2026.08.1/in_delhi_legislation.parquet",
+      "bytes": 3015231,
+      "etag": "daf40dcf2fc5fd189276db5b6f7291e5",
+      "sha256": "cb82137a7a0e9567cb3250161530b38b301b3e1d7be8772616ea8bb7f2125cfa"
+    },
+    {
+      "file": "in_dfs_regulations.parquet",
+      "url": "https://oss-data-in.vaquill.ai/v2026.08.1/in_dfs_regulations.parquet",
+      "bytes": 8247960,
+      "etag": "277516654225a5b484eeee930a22be77",
+      "sha256": "6efcdbf2b40da7694456ed6127c881c2bf097f8bb36beb0d7aeaa955fb812c68"
+    },
+    {
+      "file": "in_dgft_regulations.parquet",
+      "url": "https://oss-data-in.vaquill.ai/v2026.08.1/in_dgft_regulations.parquet",
+      "bytes": 1344369,
+      "etag": "19960ef1a5a8af4b2a538269da142199",
+      "sha256": "0b4f322e92a97ba97a00d4c549f15d53a8a967c392043ee118f6156eba76df58"
+    },
+    {
+      "file": "in_drt_tribunal_matters.parquet",
+      "url": "https://oss-data-in.vaquill.ai/v2026.08.1/in_drt_tribunal_matters.parquet",
+      "bytes": 8715575,
+      "etag": "bf29bbadf611ad103fcfd11ce394bf6b-2",
+      "sha256": "5c5bcd3e1ba6470bd78196abbb00ab546e135abfd2dc73bfab5872e9c296c07f"
+    },
+    {
+      "file": "in_gauhati_judgments.parquet",
+      "url": "https://oss-data-in.vaquill.ai/v2026.08.1/in_gauhati_judgments.parquet",
+      "bytes": 1143701913,
+      "etag": "0cd5647e3d18ec8253bc8e0c95321e47",
+      "sha256": "354a60d6776102d7f8dc0029cb19729b61d5e0f0b9358f2211fd368c3b1e9eb0"
+    },
+    {
+      "file": "in_goa_legislation.parquet",
+      "url": "https://oss-data-in.vaquill.ai/v2026.08.1/in_goa_legislation.parquet",
+      "bytes": 4094872,
+      "etag": "5fdc65036e5aa8fd696e293d8aaea3b5",
+      "sha256": "064e67f60be3699bfb89a209234927c21b08a2c104c38f31168054c29d9cf1a4"
+    },
+    {
+      "file": "in_gst_aar_tribunal_matters.parquet",
+      "url": "https://oss-data-in.vaquill.ai/v2026.08.1/in_gst_aar_tribunal_matters.parquet",
+      "bytes": 202795,
+      "etag": "9fc0fe6409acf703b81cf2c3d85c2189",
+      "sha256": "73fd2c6b717d2fe1040f966f1879053890a82ff73c44189092f50b8317d7dd81"
+    },
+    {
+      "file": "in_gujarat_judgments.parquet",
+      "url": "https://oss-data-in.vaquill.ai/v2026.08.1/in_gujarat_judgments.parquet",
+      "bytes": 2254079672,
+      "etag": "2017f71584e5b626c87827cc45f52b79",
+      "sha256": "6d0cc73a7d11ea8958d75b6af39efc19a07d7812c5c81ab876f3e54596b97318"
+    },
+    {
+      "file": "in_gujarat_legislation.parquet",
+      "url": "https://oss-data-in.vaquill.ai/v2026.08.1/in_gujarat_legislation.parquet",
+      "bytes": 4372929,
+      "etag": "550485cd5d907dc48175287458d335a8",
+      "sha256": "305bb35b92e2ec6ffb940d1c81971aea090807231d5f64fb55caa40b75119153"
+    },
+    {
+      "file": "in_haryana_legislation.parquet",
+      "url": "https://oss-data-in.vaquill.ai/v2026.08.1/in_haryana_legislation.parquet",
+      "bytes": 4357744,
+      "etag": "d2b149f132ec4ae4df725835b0d43db6",
+      "sha256": "07da8c730c30dcf9ed7783dee27988429f223bf73c4f81e404460680d73b259b"
+    },
+    {
+      "file": "in_himachal-pradesh_judgments.parquet",
+      "url": "https://oss-data-in.vaquill.ai/v2026.08.1/in_himachal-pradesh_judgments.parquet",
+      "bytes": 1012537884,
+      "etag": "589b65e65f099d3b2a8b7bbba3820e9f",
+      "sha256": "495084170a006742b7cd7590d96caf27129ef716aa7318370138ddebbfc24798"
+    },
+    {
+      "file": "in_himachal-pradesh_legislation.parquet",
+      "url": "https://oss-data-in.vaquill.ai/v2026.08.1/in_himachal-pradesh_legislation.parquet",
+      "bytes": 2794564,
+      "etag": "848890621a6d6bbb8b49ecef9dc09bd9",
+      "sha256": "4ad0a49423b6ef453165a2352b30f5f367481c5c3ebf067b437738880400d0b0"
+    },
+    {
+      "file": "in_ibbi_tribunal_matters.parquet",
+      "url": "https://oss-data-in.vaquill.ai/v2026.08.1/in_ibbi_tribunal_matters.parquet",
+      "bytes": 101561,
+      "etag": "1f499bda234340f76926b6fcd8725e4d",
+      "sha256": "f3cd98a333d64ffbfd8fffa8e9fa7abcbefa8df59468959af61f10f48d220ea1"
+    },
+    {
+      "file": "in_irdai_regulations.parquet",
+      "url": "https://oss-data-in.vaquill.ai/v2026.08.1/in_irdai_regulations.parquet",
+      "bytes": 7607167,
+      "etag": "394a95bbf0b4e0c328e3e32d468d2ce0",
+      "sha256": "2446fb44d5752be44126deb4af6b9234a2d7dc88665d27d39ce1cb33e22ffa43"
+    },
+    {
+      "file": "in_itat_tribunal_matters.parquet",
+      "url": "https://oss-data-in.vaquill.ai/v2026.08.1/in_itat_tribunal_matters.parquet",
+      "bytes": 9407270,
+      "etag": "59679c87088e423cbc5251f42cca1a4e-2",
+      "sha256": "a153c32b7648e8b44a369af8dd06215ea54c12b18555b0c86a509350c8f98a28"
+    },
+    {
+      "file": "in_jammu-and-kashmir_judgments.parquet",
+      "url": "https://oss-data-in.vaquill.ai/v2026.08.1/in_jammu-and-kashmir_judgments.parquet",
+      "bytes": 257904943,
+      "etag": "54e90824b2584b06bd08014cad2cf268",
+      "sha256": "b841a0e9d0a899d53c040cc8498d2ca836a5e8e53ffbf766cf53c367c636aa99"
+    },
+    {
+      "file": "in_jammu-kashmir_legislation.parquet",
+      "url": "https://oss-data-in.vaquill.ai/v2026.08.1/in_jammu-kashmir_legislation.parquet",
+      "bytes": 2183852,
+      "etag": "6b6c65f85ed39c4476be214939c0f787",
+      "sha256": "9f7202439e04d2371c2655b68673683ef091d071d97951aeefd9d9eadf7f198f"
+    },
+    {
+      "file": "in_jharkhand_judgments.parquet",
+      "url": "https://oss-data-in.vaquill.ai/v2026.08.1/in_jharkhand_judgments.parquet",
+      "bytes": 1114248455,
+      "etag": "e9ecf9e7dbd5af766dbcdf6f166f7427",
+      "sha256": "017296963b49d0d6fb5eb181e9dc8e635d37209eda2b41b90470d9da41bec0aa"
+    },
+    {
+      "file": "in_jharkhand_legislation.parquet",
+      "url": "https://oss-data-in.vaquill.ai/v2026.08.1/in_jharkhand_legislation.parquet",
+      "bytes": 4262098,
+      "etag": "da60647fe125791416571fdaebfdc230",
+      "sha256": "9ec550d5177573a17e63b2f19c537e30d0d2eec6368ce3b6c07cbb81dd7f6dff"
+    },
+    {
+      "file": "in_karnataka_judgments.parquet",
+      "url": "https://oss-data-in.vaquill.ai/v2026.08.1/in_karnataka_judgments.parquet",
+      "bytes": 2937140024,
+      "etag": "9467f472bc3c07ac5142bc2000d6f72e",
+      "sha256": "0431b2e31acffafd0459024b6ed2e26d049c1bc5f4e1924b3152ef6b792d10ca"
+    },
+    {
+      "file": "in_karnataka_legislation.parquet",
+      "url": "https://oss-data-in.vaquill.ai/v2026.08.1/in_karnataka_legislation.parquet",
+      "bytes": 7520117,
+      "etag": "37a5a22e3873f15c9defc06b3cbc9d36",
+      "sha256": "5e3c76f90f34c58c9c20bf90b45fb9f528133eadae96ae397db90de9c82ac9f2"
+    },
+    {
+      "file": "in_kerala_judgments.parquet",
+      "url": "https://oss-data-in.vaquill.ai/v2026.08.1/in_kerala_judgments.parquet",
+      "bytes": 4564451186,
+      "etag": "68574f3dfcc30d65be86911bc2ebef78",
+      "sha256": "353131e47a28e851593dd48c9bf6f238843b307199317220d1e8797a18a86e9a"
+    },
+    {
+      "file": "in_kerala_legislation.parquet",
+      "url": "https://oss-data-in.vaquill.ai/v2026.08.1/in_kerala_legislation.parquet",
+      "bytes": 5989226,
+      "etag": "15161a3010cf374c3ae6ba98dff166b9",
+      "sha256": "e4394cfe29eccbcd836ecb68fdf8e94cd55b0c8d752dd0a50982b7a4f97f93e0"
+    },
+    {
+      "file": "in_ladakh_legislation.parquet",
+      "url": "https://oss-data-in.vaquill.ai/v2026.08.1/in_ladakh_legislation.parquet",
+      "bytes": 697555,
+      "etag": "599bc03bfec3c100ddd7406742737de6",
+      "sha256": "1ccf5cdd463f5cd7680b7de3d4225c15a85e53780e22e79f738b5e4659535e11"
+    },
+    {
+      "file": "in_lakshadweep_legislation.parquet",
+      "url": "https://oss-data-in.vaquill.ai/v2026.08.1/in_lakshadweep_legislation.parquet",
+      "bytes": 78986,
+      "etag": "9476960ab8315c9ac9daa4088c718c46",
+      "sha256": "be59f06e80a40debadba342f2de4f67a5c3ea6aa6bbdb089269ecf5f068545dd"
+    },
+    {
+      "file": "in_law-commission_regulations.parquet",
+      "url": "https://oss-data-in.vaquill.ai/v2026.08.1/in_law-commission_regulations.parquet",
+      "bytes": 41090170,
+      "etag": "5ba9e9b1c2a28e80bc44071ac5c2ad7d",
+      "sha256": "e4cb59b2d4f318581f1ef265b08ce636f74d8caeea61059085b346ff4ba2474b"
+    },
+    {
+      "file": "in_madhya-pradesh_judgments.parquet",
+      "url": "https://oss-data-in.vaquill.ai/v2026.08.1/in_madhya-pradesh_judgments.parquet",
+      "bytes": 1489524696,
+      "etag": "77874997d11801b59be04ee9638effa2",
+      "sha256": "284baa692b336e349312d2ba36de44bfd0662815154165347c0a426acc3c68ec"
+    },
+    {
+      "file": "in_madhya-pradesh_legislation.parquet",
+      "url": "https://oss-data-in.vaquill.ai/v2026.08.1/in_madhya-pradesh_legislation.parquet",
+      "bytes": 6932262,
+      "etag": "acfe3b8ceb66c281cecb25c747fcc444",
+      "sha256": "01f92148bdeec6622fd55c7b17d602637b756e9436839e53730dacf3ad4beb48"
+    },
+    {
+      "file": "in_madras_judgments.parquet",
+      "url": "https://oss-data-in.vaquill.ai/v2026.08.1/in_madras_judgments.parquet",
+      "bytes": 4624839595,
+      "etag": "65e16e7807af3082689092ace5141e13",
+      "sha256": "8a5fac2941e700c7d5eba473a56ddd2b0b40ef05587f2906a2036a7b714c9570"
+    },
+    {
+      "file": "in_maharashtra_legislation.parquet",
+      "url": "https://oss-data-in.vaquill.ai/v2026.08.1/in_maharashtra_legislation.parquet",
+      "bytes": 9114645,
+      "etag": "553b18fa856f79573858f28abba59b61",
+      "sha256": "af08ebc65f9ae6878152a4aa2dcb442d9d6296c0017df5a493dc71fb2cc051a7"
+    },
+    {
+      "file": "in_manipur_judgments.parquet",
+      "url": "https://oss-data-in.vaquill.ai/v2026.08.1/in_manipur_judgments.parquet",
+      "bytes": 58487921,
+      "etag": "596147e06b756964bb879672f5c95c5f",
+      "sha256": "a01acd7bdbb52b59f755928197d6409d90ac2bdb459f430dc948d09c674c94cd"
+    },
+    {
+      "file": "in_manipur_legislation.parquet",
+      "url": "https://oss-data-in.vaquill.ai/v2026.08.1/in_manipur_legislation.parquet",
+      "bytes": 2017258,
+      "etag": "0798c447e532cc43f8b6b7b5be26e183",
+      "sha256": "3a3b6f78ccb906417b9b8ec732172634c2a1d20bd86614e342b6d14e61860ccc"
+    },
+    {
+      "file": "in_mca_regulations.parquet",
+      "url": "https://oss-data-in.vaquill.ai/v2026.08.1/in_mca_regulations.parquet",
+      "bytes": 18728221,
+      "etag": "d65d4df9772a60a40a71baeae78108cc",
+      "sha256": "380756511d63bca380e611d7b7ae03f604869c2dc055dc57317c3d40e6c7c24c"
+    },
+    {
+      "file": "in_meghalaya_judgments.parquet",
+      "url": "https://oss-data-in.vaquill.ai/v2026.08.1/in_meghalaya_judgments.parquet",
+      "bytes": 44026166,
+      "etag": "0dad463b59b0d993500ccfc5fa16a00e",
+      "sha256": "69116c8dbdebf0bd698097d32fdffca0692ca3167be57bf627c98e5432eeec52"
+    },
+    {
+      "file": "in_meghalaya_legislation.parquet",
+      "url": "https://oss-data-in.vaquill.ai/v2026.08.1/in_meghalaya_legislation.parquet",
+      "bytes": 1174900,
+      "etag": "25a46e54a21a17b576beb28d2eb9b176",
+      "sha256": "fa55b998b059fe7937b4034cfc1584486b3f0f28e72f311b9e0299ff9d2814bf"
+    },
+    {
+      "file": "in_mizoram_legislation.parquet",
+      "url": "https://oss-data-in.vaquill.ai/v2026.08.1/in_mizoram_legislation.parquet",
+      "bytes": 616349,
+      "etag": "9aae0adb0eaf0a49a3a3e32c20099638",
+      "sha256": "fcb191db3986419ea3e12fd9b45bb02902c7e50904c129fede654d30cb401ec7"
+    },
+    {
+      "file": "in_moefcc_regulations.parquet",
+      "url": "https://oss-data-in.vaquill.ai/v2026.08.1/in_moefcc_regulations.parquet",
+      "bytes": 40091150,
+      "etag": "c2643ac040bb8f145211e528f7f731ca",
+      "sha256": "b463780c01cfbd2ffdef263788e3e3d1c2be949c71f5a19eb07b21452b1f1ffe"
+    },
+    {
+      "file": "in_nagaland_legislation.parquet",
+      "url": "https://oss-data-in.vaquill.ai/v2026.08.1/in_nagaland_legislation.parquet",
+      "bytes": 1683563,
+      "etag": "9fcf81ca6548b77b1b2635d07f74b014",
+      "sha256": "59fa840405fd97a8c69a9e7d6f1c539b2f41c085ccbbf4ed4cab313aa4de1982"
+    },
+    {
+      "file": "in_nclt_tribunal_matters.parquet",
+      "url": "https://oss-data-in.vaquill.ai/v2026.08.1/in_nclt_tribunal_matters.parquet",
+      "bytes": 4029165,
+      "etag": "9d1966a96fdd7d7a821131fd1fb0d6f9",
+      "sha256": "8036397285f2b3ebee7b458df446c8e0c440919b25395d133c26018122344f94"
+    },
+    {
+      "file": "in_ngt_tribunal_matters.parquet",
+      "url": "https://oss-data-in.vaquill.ai/v2026.08.1/in_ngt_tribunal_matters.parquet",
+      "bytes": 1862177,
+      "etag": "a3b848d8215569d06f7c7ad88144e6cd",
+      "sha256": "cece6c6d4003e20d893898c6ff652942988e03c5ae29de450ce0c7440aa86bce"
+    },
+    {
+      "file": "in_odisha_legislation.parquet",
+      "url": "https://oss-data-in.vaquill.ai/v2026.08.1/in_odisha_legislation.parquet",
+      "bytes": 4116227,
+      "etag": "9766df6d451786531ef87b1b392fa36b",
+      "sha256": "776d24238c4247edd8ea6736f201c7a0a549146540b62d7b21fdfa9c783f45fd"
+    },
+    {
+      "file": "in_orissa_judgments.parquet",
+      "url": "https://oss-data-in.vaquill.ai/v2026.08.1/in_orissa_judgments.parquet",
+      "bytes": 1031604463,
+      "etag": "f5d12eac99fd09fb3d58042e51896e0e",
+      "sha256": "9efa3a4a354ce4cc6587b2bb178d46ef21674447867a9424c3e5df8f7e37a8dc"
+    },
+    {
+      "file": "in_patna_judgments.parquet",
+      "url": "https://oss-data-in.vaquill.ai/v2026.08.1/in_patna_judgments.parquet",
+      "bytes": 3681673261,
+      "etag": "6c51788887e5f085a10bd77f28ae0255",
+      "sha256": "a43bb99c680a82ea6560b98d658dd4830c4b24efe20a8b03fa1481fb13288c07"
+    },
+    {
+      "file": "in_puducherry_legislation.parquet",
+      "url": "https://oss-data-in.vaquill.ai/v2026.08.1/in_puducherry_legislation.parquet",
+      "bytes": 1823174,
+      "etag": "7555f7c67cb76668d5c9062539e6d354",
+      "sha256": "3fb8f879e970fbdbde59533de55fc7daa92e1a00ac596dc86bfc43755b12fae2"
+    },
+    {
+      "file": "in_punjab-and-haryana_judgments.parquet",
+      "url": "https://oss-data-in.vaquill.ai/v2026.08.1/in_punjab-and-haryana_judgments.parquet",
+      "bytes": 2309157460,
+      "etag": "08c494705452626f925c4d06115aa273",
+      "sha256": "2c7f4baf2d4083b1a158b74ebc0d7fd55a35118b2b592a92eb823be06f8a1990"
+    },
+    {
+      "file": "in_punjab_legislation.parquet",
+      "url": "https://oss-data-in.vaquill.ai/v2026.08.1/in_punjab_legislation.parquet",
+      "bytes": 6716880,
+      "etag": "244da33a9c9950946d65386e53418a27",
+      "sha256": "72ba1d01110415fc6d54fb2ca85cc6d1d306491452e486ca278a545733554c98"
+    },
+    {
+      "file": "in_rajasthan_judgments.parquet",
+      "url": "https://oss-data-in.vaquill.ai/v2026.08.1/in_rajasthan_judgments.parquet",
+      "bytes": 4000494167,
+      "etag": "147a513ecba90a462e657c140ffb7758",
+      "sha256": "ec523b8175b61a72a1f335fa3b6d9ae461b0fa79a839db61198d01bcd402791e"
+    },
+    {
+      "file": "in_rajasthan_legislation.parquet",
+      "url": "https://oss-data-in.vaquill.ai/v2026.08.1/in_rajasthan_legislation.parquet",
+      "bytes": 8056835,
+      "etag": "e77ca5982558f583c62f4778763988bd",
+      "sha256": "64a74660201fd59507982bf471b227c4abb583ce491f3d89ca3d5f5f3be9149a"
+    },
+    {
+      "file": "in_rbi_regulations.parquet",
+      "url": "https://oss-data-in.vaquill.ai/v2026.08.1/in_rbi_regulations.parquet",
+      "bytes": 46417144,
+      "etag": "131c28d594301f549148cc0a99353174",
+      "sha256": "3eebfe816cd7d96d54d8c19a00f11c808b6a3578144b93d33f386340f3096651"
+    },
+    {
+      "file": "in_rera_tribunal_matters.parquet",
+      "url": "https://oss-data-in.vaquill.ai/v2026.08.1/in_rera_tribunal_matters.parquet",
+      "bytes": 91973,
+      "etag": "f1ff46435d5925f9f861b85382ecdd52",
+      "sha256": "803831186f90c0ae32502896e15c414b37b9ce31a6e277c20d2dfb057114bf75"
+    },
+    {
+      "file": "in_sat_tribunal_matters.parquet",
+      "url": "https://oss-data-in.vaquill.ai/v2026.08.1/in_sat_tribunal_matters.parquet",
+      "bytes": 726900,
+      "etag": "1afc3859e476bede4772ed03ca7a06b1",
+      "sha256": "8ce494f553060edd809de54932804bf33eb1c50209f169eb48140e440e54bf78"
+    },
+    {
+      "file": "in_sebi_regulations.parquet",
+      "url": "https://oss-data-in.vaquill.ai/v2026.08.1/in_sebi_regulations.parquet",
+      "bytes": 33373100,
+      "etag": "9340673335c68c82e8021c0087381b53",
+      "sha256": "550d1aba07b02a433297e2ceb00fb4502288bbe9e12a9390e8d54b481866c843"
+    },
+    {
+      "file": "in_sikkim_judgments.parquet",
+      "url": "https://oss-data-in.vaquill.ai/v2026.08.1/in_sikkim_judgments.parquet",
+      "bytes": 22917212,
+      "etag": "7b51b27363c7fcd8fb380309c240742d",
+      "sha256": "5df1d5b0210f080ece1d919eac91b33a91629746b29e5fca821c021c6fd06f2c"
+    },
+    {
+      "file": "in_sikkim_legislation.parquet",
+      "url": "https://oss-data-in.vaquill.ai/v2026.08.1/in_sikkim_legislation.parquet",
+      "bytes": 2234028,
+      "etag": "4d1014a8ec38fff23da51ceb4b5ba164",
+      "sha256": "8c31491c05fee1ece3d8a39c7790f6ec5a56ce2f025ae090565cda758bd73e40"
+    },
+    {
+      "file": "in_state-gst_regulations.parquet",
+      "url": "https://oss-data-in.vaquill.ai/v2026.08.1/in_state-gst_regulations.parquet",
+      "bytes": 13964153,
+      "etag": "0acfa2cba9c2dabfe5e673ffd88df7a8",
+      "sha256": "a79822a8e982194d6b3b1ec153023de2f3d0bf2dcb0998fd30306c9e6e2ff7bd"
+    },
+    {
+      "file": "in_supreme-court_judgments.parquet",
+      "url": "https://oss-data-in.vaquill.ai/v2026.08.1/in_supreme-court_judgments.parquet",
+      "bytes": 3761559020,
+      "etag": "38a72cb1d11ca2e06384d862e3703601",
+      "sha256": "7b983854af62791d37085f28ac40fa3d0b0362a5fb4da8111e8c2f13415f4b5a"
+    },
+    {
+      "file": "in_tamil-nadu_legislation.parquet",
+      "url": "https://oss-data-in.vaquill.ai/v2026.08.1/in_tamil-nadu_legislation.parquet",
+      "bytes": 5354409,
+      "etag": "4f6d0829a9760e5e57bbd0cbb683a427",
+      "sha256": "561c44ae4759a157b0fc8b50a812aec2d08b27b8976421ba9e6b2105e43bbe35"
+    },
+    {
+      "file": "in_tdsat_tribunal_matters.parquet",
+      "url": "https://oss-data-in.vaquill.ai/v2026.08.1/in_tdsat_tribunal_matters.parquet",
+      "bytes": 84367,
+      "etag": "c649a4b423c69ad86450e5d6da3ccf46",
+      "sha256": "4c26c5bb889c43ea6a6ea7efdea369e9ada4a7a8174897f7c06362ad0de619ff"
+    },
+    {
+      "file": "in_telangana_judgments.parquet",
+      "url": "https://oss-data-in.vaquill.ai/v2026.08.1/in_telangana_judgments.parquet",
+      "bytes": 4922868664,
+      "etag": "73e05357501d434e73c1c2131bf76bd2",
+      "sha256": "1d75ddcb1a8a951b3f7ebdad4515aeebd58d2ffc931edf6003da61c45f6ee319"
+    },
+    {
+      "file": "in_telangana_legislation.parquet",
+      "url": "https://oss-data-in.vaquill.ai/v2026.08.1/in_telangana_legislation.parquet",
+      "bytes": 4107308,
+      "etag": "3fc64f4da270a816ada20752616a18f9",
+      "sha256": "01d147d655a6ae387f52453cd70053657c4aded1b15fe24573aa03b73a5ea132"
+    },
+    {
+      "file": "in_trai_regulations.parquet",
+      "url": "https://oss-data-in.vaquill.ai/v2026.08.1/in_trai_regulations.parquet",
+      "bytes": 8732715,
+      "etag": "ed17674653f1871a3c8bd1a415db020b",
+      "sha256": "445889e0ef569110422e09c7af267f5b1d78265266b7a495cd1066bbdc9efa79"
+    },
+    {
+      "file": "in_tripura_judgments.parquet",
+      "url": "https://oss-data-in.vaquill.ai/v2026.08.1/in_tripura_judgments.parquet",
+      "bytes": 183201810,
+      "etag": "0bd3d5aadd7eee36f3b2dfc45f11bb2b",
+      "sha256": "8ecad16db439ec7115b030bebfd27beb9a6619d8e942f6d58ef02ef4d5793f28"
+    },
+    {
+      "file": "in_tripura_legislation.parquet",
+      "url": "https://oss-data-in.vaquill.ai/v2026.08.1/in_tripura_legislation.parquet",
+      "bytes": 2699323,
+      "etag": "671c5acaba4c410f4b759639f4ad34b0",
+      "sha256": "7b615200c3db1ff04e88b4895a144c3c16a2e174edd38124cefe51c4fc91a6da"
+    },
+    {
+      "file": "in_uttar-pradesh_legislation.parquet",
+      "url": "https://oss-data-in.vaquill.ai/v2026.08.1/in_uttar-pradesh_legislation.parquet",
+      "bytes": 4173526,
+      "etag": "d96d8c899b18da62fc80a4d96e83a993",
+      "sha256": "47064fe46b564c440442f7d5aadc4b48de042a60ee929ff74fb5871094bad756"
+    },
+    {
+      "file": "in_uttarakhand_judgments.parquet",
+      "url": "https://oss-data-in.vaquill.ai/v2026.08.1/in_uttarakhand_judgments.parquet",
+      "bytes": 444094135,
+      "etag": "727415bea57698aafa6131daf2057235",
+      "sha256": "436fe14c8e703dd144d5b7e294b522b0465c7c3b48e774354c2e0ceee4bcb733"
+    },
+    {
+      "file": "in_uttarakhand_legislation.parquet",
+      "url": "https://oss-data-in.vaquill.ai/v2026.08.1/in_uttarakhand_legislation.parquet",
+      "bytes": 4045448,
+      "etag": "86369852294ff15e80eafa2b5a098313",
+      "sha256": "8235fc4c8e394e43e22cb3c3a687543f5e1a73aed714b9052371c89f792b01fd"
+    },
+    {
+      "file": "in_west-bengal_legislation.parquet",
+      "url": "https://oss-data-in.vaquill.ai/v2026.08.1/in_west-bengal_legislation.parquet",
+      "bytes": 11477236,
+      "etag": "434e30764f3f635ec1c43a5138f944c0",
+      "sha256": "393f4404dd32ad5427cd38aed604c9f38bc7576ac4f13f3a3dad24c68037d786"
+    }
+  ]
+}
