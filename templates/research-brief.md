@@ -7,6 +7,7 @@
 - Factual assumptions and disputed facts:
 - Sources available and known coverage gaps:
 - Intended deliverable:
+- Private details removed before sharing with external tools (yes/no):
 
 ## First researcher prompt
 

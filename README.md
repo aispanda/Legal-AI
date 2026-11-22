@@ -1,8 +1,19 @@
 # Legal-AI
 
-A local-first workflow for Indian legal research. Search a pinned release of Open India Law on your machine, verify the relevant provisions and judgments against primary sources, and give a drafting model a short evidence packet. A second reviewer searches independently and looks for authority that the first pass may have missed.
+Legal-AI helps you build and verify a local legal search index. Use the pinned Open India Law data or bring another corpus as JSONL. The [research checklist](docs/workflow.md) turns search results into an evidence packet with citations and pinpoints.
 
-## Quick start
+## Choose a search route
+
+| Route | Advantages | Tradeoffs |
+| --- | --- | --- |
+| **Tantivy** | Exact citations and keyword search. Runs locally without a model or API account. Start with a 25 MiB download, choose individual shards, or use your own corpus. | Wording matters for keyword queries. The full India download is about 50 GiB and a full index used about 80 GiB in the pilot. |
+| **Qdrant** | Restores Vaquill's prebuilt embeddings for search by meaning plus BM25. Skips local document embedding. | Requires Docker, compatible query models, and more disk. The publisher estimates 11 GB for Acts and 434 GB for all three restored collections. Check court coverage and leave room for restore files. |
+
+**Recommendation:** Start with Tantivy and the smallest relevant corpus. Add the [Qdrant Acts pilot](docs/qdrant.md) if your questions rely on paraphrases or vocabulary differences. Compare both on the same questions before restoring judgment collections. [Vaquill disk requirements](https://github.com/Vaquill-AI/open-india-law/blob/main/data/QDRANT_RESTORE.md#disk-requirements)
+
+For agents, [AGENTS.md](AGENTS.md) gives the setup sequence and checks. The [architecture guide](docs/architecture.md) explains how both routes connect to the research workflow.
+
+## Tantivy quick start
 
 Clone this repository from GitHub or download and unzip it. From its root, use Python 3.14 and curl. The commands below use a macOS or Linux shell. The starter download is about 25 MiB and contains central legislation. The search returns source filenames and row positions alongside the matching text and available source metadata.
 
@@ -26,10 +37,10 @@ List the shards and their sizes before downloading. Choose the courts, statutes,
 .venv/bin/python download_corpus.py --file in_supreme-court_judgments.parquet
 .venv/bin/python search_index.py build
 .venv/bin/python search_index.py search "procedural fairness" --kind judgment --limit 5
-.venv/bin/python search_index.py search "[verified citation or case number]" --kind judgment --exact --limit 3
+.venv/bin/python search_index.py search "CITATION" --kind judgment --exact --limit 3
 ```
 
-Repeat `--file` in one command to select several shards. The optional `--all` flag downloads about 50 GiB. Allow additional disk space for the local index and build files. The downloader checks publisher SHA-256 values before accepting new downloads. Keep one download or build process active per checkout. Remove an incomplete `.part` file and retry if a transfer has an invalid checksum. If a verified file is suspected to have changed, remove its verification receipt and rerun the downloader to rehash the file.
+Replace `CITATION` with a verified citation or case number. Repeat `--file` in one command to select several shards. The optional `--all` flag downloads about 50 GiB. Allow additional disk space for the local index and build files. The downloader checks publisher SHA-256 values before accepting new downloads. Keep one download or build process active per checkout. For an invalid checksum after an interrupted transfer, delete the affected `corpus/v2026.08.1/<shard>.part` and retry. To rehash an existing downloaded file, remove its `corpus/v2026.08.1/<shard>.verified.json` receipt and rerun the downloader.
 
 The release metadata is pinned to **Open India Law v2026.08.1**. Court and date coverage vary by source. Review coverage and use current official sources for material developments, including amendments and later treatment. Corpus attribution and source options are listed in [Tools and sources](docs/tools-and-sources.md).
 
@@ -43,4 +54,4 @@ Export passages from your source as UTF-8 JSON Lines. Build a separate local ind
 2. Follow the [research and validation checklist](docs/workflow.md). Start with local search and fill specific gaps using the [tools and sources](docs/tools-and-sources.md).
 3. Record findings using the [evidence packet](templates/evidence-packet.md). Give the packet to the drafting model after the independent review and source checks.
 
-The repository contains the search tooling, release metadata, and reusable instructions and templates. Downloaded data, indexes, credentials, and per-matter research belong in the ignored local directories.
+The repository contains the search tooling, release metadata, and reusable instructions and templates. Keep downloaded data in `corpus/`, shard indexes in `tantivy-*/`, and custom indexes and matter files in `research/`. These paths and local `.env*` files are ignored by Git.
