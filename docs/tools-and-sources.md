@@ -10,8 +10,8 @@ Start with the source closest to the question. Use provider search to find leads
 | Vaquill India live API | Targeted legislation and case lookups when an appropriate tool is available. Check the specific corpus and endpoint before searching. | [India API and MCP](https://www.vaquill.ai/in) |
 | Official publishers | Statute text, gazettes, official orders, judgments, and case status. Verify the version applicable to the event. | [India Code](https://www.indiacode.nic.in/) · [eGazette](https://egazette.gov.in/) · [Supreme Court judgments](https://www.sci.gov.in/judgements/) · [official eCourts Services](https://services.ecourts.gov.in/ecourtindia_v6/) |
 | High Courts and tribunals | Use the issuing High Court, tribunal, or regulator's site for its orders and decisions. The eCourts judgment portal is another source for court judgments. | [eCourts judgments](https://judgments.ecourts.gov.in/) |
-| eCourtsIndia | A separate provider for docket, order, and case-history discovery by case number or CNR. | [Search](https://ecourtsindia.com/) · [API documentation](https://ecourtsindia.com/api/docs) |
-| Indian Kanoon and Prism | Find citations, related decisions, later mentions, and public copies. Treat AI results as leads until verified. | [Search](https://indiankanoon.org/) · [API](https://api.indiankanoon.org/) · [Prism access terms](https://indiankanoon.org/members/terms/) |
+| eCourtsIndia | An independent provider for docket, order, and case-history discovery by case number or CNR. Its terms permit automated access through its Partner API under its own terms and pricing. | [Search](https://ecourtsindia.com/) · [API documentation](https://ecourtsindia.com/api/docs) |
+| Indian Kanoon and Prism | Find citations, related decisions, later mentions, and public copies. Treat AI results as leads until verified. API use requires attribution as specified in its terms. | [Search](https://indiankanoon.org/) · [API](https://api.indiankanoon.org/) · [API terms](https://api.indiankanoon.org/terms/) · [Prism access terms](https://indiankanoon.org/members/terms/) |
 
 ## United States
 

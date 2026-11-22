@@ -1,5 +1,7 @@
 # Legal-AI
 
+For educational and entertainment use. Legal-AI is not legal advice and is independent of the providers and courts it mentions. Results may be inaccurate or outdated. Consult a qualified lawyer before relying on them or taking legal action. See the [disclaimer](DISCLAIMER.md), [license](LICENSE), and [third-party notices](NOTICE.md).
+
 Legal-AI helps you build and verify a local legal search index. Use the pinned Open India Law data or bring another corpus as JSONL. The [research checklist](docs/workflow.md) turns search results into an evidence packet with citations and pinpoints.
 
 ## Choose a search route
@@ -42,7 +44,7 @@ List the shards and their sizes before downloading. Choose the courts, statutes,
 
 Replace `CITATION` with a verified citation or case number. Repeat `--file` in one command to select several shards. The optional `--all` flag downloads about 50 GiB. Allow additional disk space for the local index and build files. The downloader checks publisher SHA-256 values before accepting new downloads. Keep one download or build process active per checkout. For an invalid checksum after an interrupted transfer, delete the affected `corpus/v2026.08.1/<shard>.part` and retry. To rehash an existing downloaded file, remove its `corpus/v2026.08.1/<shard>.verified.json` receipt and rerun the downloader.
 
-The release metadata is pinned to **Open India Law v2026.08.1**. Court and date coverage vary by source. Review coverage and use current official sources for material developments, including amendments and later treatment. Corpus attribution and source options are listed in [Tools and sources](docs/tools-and-sources.md).
+The release metadata is pinned to **Open India Law v2026.08.1**. Court and date coverage vary by source. Review coverage and use current official sources for material developments, including amendments and later treatment. See [third-party notices](NOTICE.md) for attribution and [Tools and sources](docs/tools-and-sources.md) for source options.
 
 ## Use another corpus
 
