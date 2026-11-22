@@ -2,6 +2,8 @@
 
 Choose this route for search by meaning and keywords when the relevant corpus is available as a Vaquill snapshot. Start with the Acts and regulations collection. The publisher estimates an 11 GB restored footprint for Acts and about 434 GB across all three collections. Plan room for temporary restore files. The two judgment collections cover different courts, with some overlap. The publisher's guide gives the sizes, shard counts and coverage for each. [Vaquill restore and storage guide](https://github.com/Vaquill-AI/open-india-law/blob/main/data/QDRANT_RESTORE.md)
 
+The restore steps are adapted from the linked Vaquill guide. Changes include a dedicated container and storage directory, an absence check, the sparse vector IDF modifier, and an exact point count check.
+
 ## Restore Acts locally
 
 From the repository root, use Docker, curl, and jq in a macOS or Linux shell. The commands start a dedicated loopback container named `legal-ai-qdrant` on port 6337 with its own data directory. Choose an unused name, port, and storage directory for each new instance. For custom storage, choose a new directory under an existing parent on the intended filesystem. The command reports that filesystem's free space before the restore. If you change the port, use it in the restore block, verification command, and query helper. The restore refuses to proceed if `acts_india` already exists. Keep the current container and storage if you want to [reuse an existing restore](#verify-an-existing-restore).
@@ -21,7 +23,7 @@ From the repository root, use Docker, curl, and jq in a macOS or Linux shell. Th
 )
 ```
 
-The collection must match the source's two-shard layout and vector settings. Run the following block in one shell. It reads the snapshot names and checksums from the publisher and has Qdrant pull the files directly.
+The collection uses the publisher's two-shard layout and dense vector settings. It also sets the sparse vector's IDF modifier for the Qdrant BM25 query encoder. Run the following block in one shell. It reads the snapshot names and checksums from the publisher and has Qdrant pull the files directly.
 
 ```sh
 (
