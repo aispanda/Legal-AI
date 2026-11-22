@@ -4,7 +4,7 @@ Choose this route for search by meaning and keywords when the relevant corpus is
 
 ## Restore Acts locally
 
-From the repository root, use Docker, curl, and jq in a macOS or Linux shell. The commands start a dedicated loopback container named `legal-ai-qdrant` on port 6337 with its own data directory. Choose an unused name, port, and storage directory for each new instance. If you change the port, use it in the restore block, verification command, and query helper. The restore refuses to proceed if `acts_india` already exists. Keep the current container and storage if you want to [reuse an existing restore](#verify-an-existing-restore).
+From the repository root, use Docker, curl, and jq in a macOS or Linux shell. The commands start a dedicated loopback container named `legal-ai-qdrant` on port 6337 with its own data directory. Choose an unused name, port, and storage directory for each new instance. For custom storage, choose a new directory under an existing parent on the intended filesystem. The command reports that filesystem's free space before the restore. If you change the port, use it in the restore block, verification command, and query helper. The restore refuses to proceed if `acts_india` already exists. Keep the current container and storage if you want to [reuse an existing restore](#verify-an-existing-restore).
 
 ```sh
 (
@@ -13,6 +13,7 @@ From the repository root, use Docker, curl, and jq in a macOS or Linux shell. Th
   port=6337
   storage="$PWD/research/qdrant"
   mkdir -p research
+  df -h "$(dirname "$storage")"
   mkdir "$storage"
   docker run -d --name "$name" -p "127.0.0.1:$port:6333" \
     -v "$storage:/qdrant/storage" qdrant/qdrant:v1.16.3
