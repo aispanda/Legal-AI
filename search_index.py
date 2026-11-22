@@ -1,4 +1,4 @@
-"""Local BM25 and citation lookup for the Open India Law Parquet release."""
+"""Local BM25 and citation lookup for legal corpora."""
 
 import argparse
 import json
@@ -24,11 +24,11 @@ COLUMNS = {
 }
 
 
-def schema():
+def schema(additional_fields=()):
     builder = tv.SchemaBuilder()
     for key in TEXT:
         builder.add_text_field(key, stored=True)
-    for key in KEYWORDS + STORED:
+    for key in KEYWORDS + STORED + additional_fields:
         builder.add_text_field(key, stored=key != "exact", tokenizer_name="raw", index_option="basic")
     for key in ("year", "row", "page_start", "page_end"):
         builder.add_unsigned_field(key, stored=True, indexed=key == "year", fast=key == "year")
@@ -49,7 +49,7 @@ def citation_values(title, section, citation, case_number):
     return citation, case_number, act_section
 
 
-def document(row, path, kind, region, position):
+def document(row, path, kind, region, position, additional_fields=()):
     title = row.get("title") or ""
     section = row.get("section_number") or ""
     case_number = row.get("case_number") or ""
@@ -65,6 +65,7 @@ def document(row, path, kind, region, position):
         "source_url": row.get("source_url") or "", "mirror_url": row.get("mirror_url") or "",
         "decision_date": row.get("decision_date") or "", "chunk_id": row.get("chunk_id") or "",
     }
+    values.update({field: row.get(field) for field in additional_fields})
     doc = tv.Document()
     for field, value in values.items():
         if value:
@@ -204,6 +205,7 @@ def release_files():
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--index", type=Path, help="path to a custom index for search")
     actions = parser.add_subparsers(dest="action", required=True)
     actions.add_parser("build")
     status = actions.add_parser("status")
@@ -213,12 +215,15 @@ def main():
     query.add_argument("--exact", action="store_true")
     query.add_argument("--court")
     query.add_argument("--region")
-    query.add_argument("--kind", choices=KINDS.values())
+    query.add_argument("--kind", choices=(*KINDS.values(), "document"))
     query.add_argument("--from-year", type=int)
     query.add_argument("--to-year", type=int)
     query.add_argument("--limit", type=int, default=10, choices=range(1, 101))
     args = vars(parser.parse_args())
     action = args.pop("action")
+    destination = args.pop("index")
+    if destination is not None and action != "search":
+        parser.error("--index is available for search")
     if action == "build":
         build(release_files())
     elif action == "status":
@@ -229,7 +234,7 @@ def main():
         print(json.dumps({"files_indexed": done, "downloaded_files": len(files),
                           "records_indexed": searcher.num_docs - done}))
     else:
-        print(json.dumps(search(open_index(), **args), ensure_ascii=False, indent=2))
+        print(json.dumps(search(open_index(destination or INDEX), **args), ensure_ascii=False, indent=2))
 
 
 if __name__ == "__main__":

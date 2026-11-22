@@ -33,6 +33,10 @@ Repeat `--file` in one command to select several shards. The optional `--all` fl
 
 The release metadata is pinned to **Open India Law v2026.08.1**. Court and date coverage vary by source. Review coverage and use current official sources for material developments, including amendments and later treatment. Corpus attribution and source options are listed in [Tools and sources](docs/tools-and-sources.md).
 
+## Use another corpus
+
+Export passages from your source as UTF-8 JSON Lines. Build a separate local index with `build_corpus.py` and query it with the existing search command. The [architecture and corpus guide](docs/architecture.md) gives the schema, setup commands, and provenance rules.
+
 ## Run a research assignment
 
 1. Copy the [research brief and prompts](templates/research-brief.md) into your local research notes and fill in one concrete question.
